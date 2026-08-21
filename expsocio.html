@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Experimental Sociolinguistics Lab at City University of Hong Kong">
+    <meta name="author" content="Aini Li">
+
+    <title>ExpSocio Lab · Aini Li</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        /* People-page layout: a compact portrait beside each member biography. */
+        .member-profile {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            margin: 34px 0;
+        }
+
+        .member-photo,
+        .member-photo-placeholder {
+            flex: 0 0 140px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+        }
+
+        .member-photo {
+            object-fit: cover;
+        }
+
+        .member-photo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            color: #777;
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .member-bio h3 {
+            margin-top: 0;
+        }
+
+        .member-bio p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .member-profile {
+                display: block;
+            }
+
+            .member-photo,
+            .member-photo-placeholder {
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div style="font-size: 20px;">
+                        Menu <i class="fa fa-bars"></i>
+                    </div>
+                </button>
+                <a class="navbar-brand" href="index.html">Li, Aini（李艾倪）</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="expsocio.html">LAB</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="intro-header" style="background-image: url('img/background.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>ExpSocio Lab</h1>
+                        <hr class="small">
+                        <span class="subheading">Experimental Sociolinguistics Lab · City University of Hong Kong</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <section>
+                    <h2>Welcome!</h2>
+                    <p>The Experimental Sociolinguistics (ExpSocio) Lab at City University of Hong Kong studies language variation and change at the interface of <strong>sociolinguistics</strong> and <strong>psycholinguistics</strong>. We work on a wide range of topics related to the perception and production of sociolinguistic variation, combining corpus and experimental approaches.  We ask questions like:</p>
+                    <ul>
+                        <li>How does language vary between and within speakers, and how does it change over time?</li>
+                        <li>How does social meaning shape the production and perception of sociolinguistic variation?</li>
+                        <li>How is variation mentally represented?</li>
+                        <li>What kind of sociolinguistic knowledge do speakers have, and how do they utilize it in real time?</li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <section>
+                    <h2>Lab Members</h2>
+                    <div class="member-profile">
+                        <img class="member-photo" src="img/Aini.JPG" alt="Aini Li">
+                        <div class="member-bio">
+                            <h3>Aini Li</h3>
+                            <p>Aini (she/her/hers) is the lab director and an Assistant Professor in the Department of Linguistics and Translation at City University of Hong Kong.</p>
+                        </div>
+                    </div>
+
+                    <div class="member-profile">
+                         <img class="member-photo" src="img/Yi.jpg" alt="Yi Zhang">
+                        <div class="member-bio">
+                            <h3>Yi Zhang</h3>
+                            <p>Yi (she/her/hers) is a second-year PhD student in Linguistics. Her research interests lie at the interface of phonetics, sociolinguistics, and psycholinguistics. She is particularly interested in individual differences in the production, perception, processing, and social interpretation of speech sounds.</p>
+                        </div>
+                    </div>
+
+                    <div class="member-profile">
+                        <img class="member-photo" src="img/Zoey.jpg" alt="Zoey Ziwei Xiao">
+                        <div class="member-bio">
+                            <h3>Zoey Ziwei Xiao</h3>
+                            <p>Zoey (she/her/hers) is a part-time research assistant in the lab with a strong interest in speech perception and processing. Her research specifically explores how listeners perceive and integrate tonal and affective cues in spoken language.</p>
+                        </div>
+                    </div>
+
+                    <div class="member-profile">
+                        <img class="member-photo" src="img/Sean.jpg" alt="Sean Du">
+                        <div class="member-bio">
+                            <h3>Sean Du</h3>
+                            <p>Sean (he/his) is a part-time research assistant in the lab. His research interests include sociolinguistics, intercultural communication, and media communication.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <hr> -->
+
+                <!-- <section id="research">
+                    <h2>Research</h2>
+                    <h3>Selected recent work</h3>
+                    <ul>
+                        <li>Yi Zhang and Aini Li. To appear. <em>Gender differences in the phonetic realization of the checked tone in Kaihui Xiang.</em> In <em>Proceedings of Interspeech 2026.</em></li>
+                        <li>Yi Zhang and Aini Li. To appear. <em>Tense modal voice, not falsetto: An F<sub>0</sub>-specific physiological byproduct of the extreme high-pitch tone in Kaihui Xiang.</em> In <em>Proceedings of Interspeech 2026.</em></li>
+                        <li>Yi Zhang, Xinye Zhang, Hai Hu, and Aini Li. 2026. <em>Acquisition of variation in dual immersion preschools: the use of syllable-initial alveolar and retroflex sibilants by Chinese heritage language children.</em> Poster presented at the 5th Annual International Symposium on Current Issues on Phonetics and Cognitive Sciences of Language (HISPhonCog 2026), Seoul, Korea, May 22-23.</li>
+                    </ul>
+                </section> -->
+
+                <!-- <hr> -->
+
+                <section>
+                    <h2>Lab Alumni</h2>
+                    <ul>
+                        <li><strong>Jiyuan Zhou</strong> — worked as our lab RA in Fall 2024 → is now a PhD student in Linguistics at University of South Carolin.</li>
+                    </ul>
+                </section>
+
+                <hr>
+
+            <section>
+    <h2>Join Us</h2>
+    <p>We are actively recruiting students interested in <strong>(variationist/quantitative) sociolinguistics, psycholinguistics, and experimental approaches to language variation and change</strong>.</p>
+    <p>Students from diverse backgrounds — linguistics, psychology, cognitive science, and related fields — are warmly welcome. To join as a PhD student or research assistant, please get in touch with Aini: <a href="mailto:ainili@cityu.edu.hk">ainili@cityu.edu.hk</a>.</p>
+    <p>For PhD admission, preference will be given to students with a strong background in quantitative methods and speech data analysis. Students from the Chinese mainland with a strong academic background are encouraged to apply for the Hong Kong PhD Fellowship Scheme (HKPFS). Current junior PhD students at a C9 University in the Chinese mainland are also welcome to join us through the joint PhD program with CityUHK.</p>
+</section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; Aini Li</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
